@@ -35,13 +35,13 @@ Make sure your Developer Tools are open at all times while working on this proje
 Before you click the "Complete Assessment" button on the Learning Platform, add your answers below each question and make a commit.
 
 1. When a child is clicked on in the browser, which module contains the code that will execute on that event happening? Can you explain the algorithm of that logic?
-   > Your answer here
+   > the Kids.js module contains the code that executes the click event. The event listener detects when a child element is clicked on in the browser and the algorithm looks at the data-type of the child clicked. It then gets the child's id and wish via the data-id and data-wish attributes. It then searches the children array for the matching child object and an alert is displayed showing the child's name and their wish in the alert window.
 
 2. In the **Pairings** module, why must the `findCelebrityMatch()` function be invoked inside the `for..of` loop that iterates the kids array?
-   > Your answer here
+   > It has to be invoked inside the for..of loop because each child needs to be matched with their celebrity based on their celebrityId. If you did this outside the loop it would give you just one match I believe.
 
 3. In the **CelebrityList** module, can you describe how the name of the sport that the celebrity plays can be displayed in the window alert text?
-   > Your answer here
+   > The name of the sport that the celebrity plays can be displayed in the window alert by accessing the data-sport attribute from the clicked element. That element hold the sport name in the variable.
 
 4. Can you describe, in detail, the algorithm that is in the `main` module?
    > document.querySelector("#container) is a method that targets the first element in the DOM with the id #container and then we are setting it as the definition to the mainContainer variable. the applicationHTML variable is defined as a string of the HTML that is being rendered into the DOM. at the innerHTML of the id #container on the index.html we are inserting this string into there effectively rebuilding the DOM with everything defined inside the applicationHTML variable. 
