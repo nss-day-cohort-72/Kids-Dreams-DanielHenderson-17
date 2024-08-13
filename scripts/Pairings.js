@@ -9,6 +9,7 @@ const celebrities = getCelebrities();
 
 const findCelebrityMatch = (kidObject, celebrityArray) => {
 
+    //What if a kid doesn't have a celebrity?????
     let celebrity = null;
 
     //Iterates through the array of celebrities to find the one with a matching ID
